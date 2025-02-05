@@ -111,7 +111,7 @@ export default function BootstrapHomepage() {
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div> 
-            </div>
+            </div> 
 
             <div className="footer overflow-hidden mt-5  bg-light pt-5">
                 <div className="row justify-content-center">
