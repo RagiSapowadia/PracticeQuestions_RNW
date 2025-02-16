@@ -3,7 +3,7 @@ import {Link, Outlet} from "react-router-dom";
 
 export default function Categories() {
   return (
-    <div> 
+    <div>  
       <h1>categories Page</h1>
       <div>
         <Link to="category1">Electronics</Link>
