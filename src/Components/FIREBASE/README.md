@@ -1,9 +1,9 @@
 1) Please Attach firebase to the folder
 2) add following routes:
     <Routes>
-        <Route path="/" element={<SignUp />} />
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/dashboard" element={<DashBoard/>}/>
+        <Route path="/" element={SignUp} />
+        <Route path="/login" element={Login}/>
+        <Route path="/dashboard" element={DashBoard}/>
       </Routes>
 
 3) add bootstrap cdn:
