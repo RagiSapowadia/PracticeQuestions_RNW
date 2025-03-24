@@ -1,0 +1,54 @@
+{
+  "rooms": [
+    {
+      "id": "2",
+      "type": "Double",
+      "features": "AC, Free Wi-Fi, TV",
+      "available": true
+    },
+    {
+      "id": "3",
+      "type": "Single-Double",
+      "features": "AC, Free Wi-Fi, TV",
+      "available": true
+    },
+    {
+      "id": "4",
+      "type": "Suite",
+      "features": "AC, Free Wi-Fi, TV, Balcony",
+      "available": true
+    },
+    {
+      "id": "5",
+      "type": "Double",
+      "features": "AC, Free Wi-Fi, TV",
+      "available": true
+    },
+    {
+      "id": "6",
+      "type": "Single-Double",
+      "features": "AC, Free Wi-Fi, TV",
+      "available": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "roomId": "2",
+      "checkIn": "2024-03-25",
+      "checkOut": "2024-03-30"
+    },
+    {
+      "id": "578d",
+      "roomId": "4",
+      "checkIn": "2025-03-20",
+      "checkOut": "2025-03-27"
+    },
+    {
+      "id": "4f77",
+      "roomId": "4",
+      "checkIn": "2025-03-16",
+      "checkOut": "2025-03-28"
+    }
+  ]
+}
