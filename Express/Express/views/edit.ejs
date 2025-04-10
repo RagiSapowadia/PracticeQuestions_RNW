@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+<body>
+    <form action="/editData" method="post">
+        <input type="hidden" name="id" value="<%= student.id %>">
+        <input type="text" name="name" placeholder="Enter Name" value="<%= student.name %>">
+        <input type="text" name="age" placeholder="Enter Age" value="<%= student.age %>">
+        <input type="submit" value="Update">
+    </form>
+</body>                                     
+</html>
