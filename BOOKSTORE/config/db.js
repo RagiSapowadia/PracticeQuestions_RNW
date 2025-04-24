@@ -1,7 +1,6 @@
 const mongoose = require("mongoose")
-
-mongoose.connect("mongodb+srv://ragisapovadia:ragisapowadia17@cluster0.jrjdxni.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-
+require("dotenv").config();
+mongoose.connect(process.env.MONGO_URI)
 const db = mongoose.connection
 db.on("connected",(err,data)=>{
     if(err){
