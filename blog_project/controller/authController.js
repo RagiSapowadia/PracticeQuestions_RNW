@@ -11,14 +11,9 @@ exports.login = async (req, res) => {
     const { email, password } = req.body;
     const user = await AuthModel.findOne({ email, password });
     if (!user) return res.send("Invalid credentials.");
-    req.session.user = user;
+    req.session.user = user;      
     res.redirect("/");
 };
 
- 
 
-// Logout
-exports.logout = (req, res) => {
-    req.session.destroy();
-    res.redirect("/login");
-};
+ 

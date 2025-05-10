@@ -51,8 +51,5 @@ exports.loginUser = async (req, res) => {
         return res.send("Invalid credentials");
     }
 
-    // Store email in session
-    req.session.user = { email: user.email };
-
     res.redirect('/');
 };
