@@ -1,13 +1,15 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+require("dotenv").config();  // Load environment variables from .env file
 
-mongoose.connect("mongodb+srv://ragisapovadia:ragisapowadia17@cluster0.jrjdxni.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+// Use the MONGO_URI environment variable
+mongoose.connect(process.env.MONGO_URI);
 
-const db = mongoose.connection
-db.on("connected",(err,data)=>{
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log("connected")
-    }
-})
+const db = mongoose.connection;
+
+db.on("connected", (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Connected to the database");
+  }
+});
